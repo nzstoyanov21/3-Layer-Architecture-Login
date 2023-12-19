@@ -4,7 +4,7 @@ async function authenticate() {
         const password = document.getElementById("password").value;
 
         // Read the content of the text file
-        const response = await fetch('../Data Tier/data.txt');
+        const response = await fetch("../Data Layer/data.txt");
         const data = await response.text();
 
         const users = data.split('\n');
